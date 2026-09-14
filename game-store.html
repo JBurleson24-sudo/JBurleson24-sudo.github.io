@@ -1,1 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Video Game Store Management System | Jared Burleson</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #161b22;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #30363d;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #e6edf3;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #58a6ff;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .hero {
+            padding: 90px 0 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #8b949e;
+            font-size: 1.15rem;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        section {
+            padding: 55px 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+        }
+
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        .card h3 {
+            color: #58a6ff;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tech {
+            background: #21262d;
+            border: 1px solid #30363d;
+            padding: 7px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        .features {
+            margin: 20px 0;
+            padding-left: 25px;
+        }
+
+        .features li {
+            margin-bottom: 8px;
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 18px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #2ea043;
+        }
+
+        .back {
+            background: #21262d;
+        }
+
+        .back:hover {
+            background: #30363d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Jared Burleson</div>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#skills">Skills</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="hero">
+            <div class="container">
+                <h1>🎮 Video Game Store Management System</h1>
+
+                <p>
+                    A desktop application designed to manage video game store
+                    operations, products, accounts, and application navigation.
+                </p>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+
+                <div class="card">
+                    <h3>📌 Project Overview</h3>
+
+                    <p>
+                        The Video Game Store Management System is a Windows Forms
+                        application developed in C# and .NET. The application
+                        provides functionality for managing a video game store
+                        through a graphical user interface.
+                    </p>
+
+                    <p style="margin-top: 15px;">
+                        This project demonstrates my ability to develop desktop
+                        applications, create user interfaces, organize application
+                        navigation, and implement functionality using C#.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <h3>🛠️ Technologies Used</h3>
+
+                    <div class="tech-list">
+                        <span class="tech">C#</span>
+                        <span class="tech">.NET</span>
+                        <span class="tech">Windows Forms</span>
+                        <span class="tech">Visual Studio</span>
+                        <span class="tech">Object-Oriented Programming</span>
+                        <span class="tech">File Handling</span>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <h3>⚙️ Key Features</h3>
+
+                    <ul class="features">
+                        <li>User interface designed with Windows Forms</li>
+                        <li>Application navigation between different screens</li>
+                        <li>Account management functionality</li>
+                        <li>Video game and product management</li>
+                        <li>File handling</li>
+                        <li>Organized C# application structure</li>
+                        <li>Desktop application development using .NET</li>
+                    </ul>
+                </div>
+
+
+                <div class="card">
+                    <h3>💻 What I Learned</h3>
+
+                    <p>
+                        This project gave me practical experience developing a
+                        complete desktop application in C#. I worked with
+                        Windows Forms to create the user interface and learned
+                        how to connect different parts of an application through
+                        navigation and event-driven programming.
+                    </p>
+
+                    <p style="margin-top: 15px;">
+                        The project also helped strengthen my understanding of
+                        object-oriented programming, file handling, application
+                        organization, and designing software around a specific
+                        business scenario.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <h3>🎯 Project Highlights</h3>
+
+                    <p>
+                        The goal of the project was to create a functional
+                        management system that could be used as the foundation
+                        for operating a video game store.
+                    </p>
+
+                    <div class="buttons">
+                        <a
+                            class="button"
+                            href="https://github.com/JBurleson24-sudo"
+                            target="_blank">
+                            View My GitHub
+                        </a>
+
+                        <a
+                            class="button back"
+                            href="index.html">
+                            ← Back to Portfolio
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Jared Burleson | Software Development Portfolio</p>
+    </footer>
+
+</body>
+</html>
