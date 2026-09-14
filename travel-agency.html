@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lodging & Travel Agency Application | Jared Burleson</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #161b22;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #30363d;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #e6edf3;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #58a6ff;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .hero {
+            padding: 90px 0 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #8b949e;
+            font-size: 1.15rem;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        section {
+            padding: 55px 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+        }
+
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        .card h3 {
+            color: #58a6ff;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tech {
+            background: #21262d;
+            border: 1px solid #30363d;
+            padding: 7px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        .features {
+            margin: 20px 0;
+            padding-left: 25px;
+        }
+
+        .features li {
+            margin-bottom: 8px;
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 18px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #2ea043;
+        }
+
+        .back {
+            background: #21262d;
+        }
+
+        .back:hover {
+            background: #30363d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Jared Burleson</div>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#skills">Skills</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="hero">
+            <div class="container">
+                <h1>✈️ Lodging & Travel Agency Application</h1>
+
+                <p>
+                    A Java application designed to manage lodging,
+                    customers, employees, and travel agency operations
+                    using object-oriented programming and MySQL.
+                </p>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+
+                <div class="card">
+                    <h3>📌 Project Overview</h3>
+
+                    <p>
+                        The Lodging & Travel Agency Application is a Java-based
+                        application that manages information related to customers,
+                        lodging, employees, and travel agency operations.
+                    </p>
+
+                    <p style="margin-top: 15px;">
+                        The project demonstrates object-oriented programming,
+                        database development, and the integration of a Java
+                        application with a MySQL database.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <h3>🛠️ Technologies Used</h3>
+
+                    <div class="tech-list">
+                        <span class="tech">Java</span>
+                        <span class="tech">MySQL</span>
+                        <span class="tech">JDBC</span>
+                        <span class="tech">Object-Oriented Programming</span>
+                        <span class="tech">Database Development</span>
+                        <span class="tech">NetBeans</span>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <h3>⚙️ Key Features</h3>
+
+                    <ul class="features">
+                        <li>Customer management</li>
+                        <li>Employee management</li>
+                        <li>Lodging management</li>
+                        <li>Hotel and house information</li>
+                        <li>Travel agency functionality</li>
+                        <li>MySQL database integration</li>
+                        <li>Java object-oriented class structure</li>
+                        <li>Database connectivity using JDBC</li>
+                    </ul>
+                </div>
+
+
+                <div class="card">
+                    <h3>💻 What I Learned</h3>
+
+                    <p>
+                        This project strengthened my understanding of Java
+                        object-oriented programming by requiring multiple
+                        classes to work together as part of a larger
+                        application.
+                    </p>
+
+                    <p style="margin-top: 15px;">
+                        I also gained experience working with relational
+                        databases and connecting Java applications to MySQL.
+                        This helped me understand how applications can store,
+                        retrieve, and manage persistent data.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <h3>🎯 Project Highlights</h3>
+
+                    <p>
+                        This project combines application development with
+                        database management to create a system that could
+                        support the operations of a lodging and travel agency.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a
+                            class="button"
+                            href="https://github.com/JBurleson24-sudo"
+                            target="_blank">
+                            View My GitHub
+                        </a>
+
+                        <a
+                            class="button back"
+                            href="index.html">
+                            ← Back to Portfolio
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Jared Burleson | Software Development Portfolio</p>
+    </footer>
+
+</body>
+</html>
