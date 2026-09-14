@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jared Burleson | Software Developer Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #161b22;
+            border-bottom: 1px solid #30363d;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #58a6ff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #e6edf3;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        nav a:hover {
+            color: #58a6ff;
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            padding: 100px 30px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #58a6ff;
+        }
+
+        .hero h2 {
+            color: #8b949e;
+            font-weight: normal;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            color: #c9d1d9;
+            font-size: 1.1rem;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #2ea043;
+            transform: translateY(-2px);
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 70px 30px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 35px;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #21262d;
+            border: 1px solid #30363d;
+            padding: 10px 16px;
+            border-radius: 6px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 25px;
+            transition: 0.2s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            border-color: #58a6ff;
+        }
+
+        .project h3 {
+            margin-bottom: 12px;
+            color: #58a6ff;
+        }
+
+        .project p {
+            color: #c9d1d9;
+            margin-bottom: 20px;
+        }
+
+        .project a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .about {
+            color: #c9d1d9;
+            max-width: 800px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+        }
+
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding: 15px 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Jared Burleson</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="https://github.com/JBurleson24-sudo">GitHub</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h1>Hi, I'm <span>Jared Burleson</span></h1>
+
+        <h2>🎮 Software Development Student | 💻 Aspiring Software Developer</h2>
+
+        <p>
+            I build applications, explore new technologies, and develop
+            software through hands-on projects involving desktop applications,
+            databases, web development, and game development.
+        </p>
+
+        <a class="button" href="#projects">View My Projects</a>
+    </section>
+
+
+    <section id="about">
+
+        <h2>👋 About Me</h2>
+
+        <p class="about">
+            I'm a software development student focused on developing my
+            programming, software design, and problem-solving skills.
+            I enjoy creating applications that combine technical functionality
+            with interactive and engaging user experiences.
+        </p>
+
+        <br>
+
+        <p class="about">
+            My projects include desktop applications, database-driven software,
+            and interactive game development. I'm continuing to expand my
+            experience with C#, Java, JavaScript, HTML, CSS, SQL, .NET, and Unity.
+        </p>
+
+    </section>
+
+
+    <section id="skills">
+
+        <h2>🧰 Skills & Technologies</h2>
+
+        <div class="skills">
+
+            <div class="skill">C#</div>
+            <div class="skill">Java</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">SQL</div>
+            <div class="skill">.NET</div>
+            <div class="skill">Windows Forms</div>
+            <div class="skill">Unity</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Visual Studio</div>
+            <div class="skill">Git</div>
+            <div class="skill">GitHub</div>
+
+        </div>
+
+    </section>
+
+
+    <section id="projects">
+
+        <h2>🎮 Featured Projects</h2>
+
+        <div class="projects">
+
+            <div class="project">
+
+                <h3>🕹️ Video Game Store Management System</h3>
+
+                <p>
+                    A desktop application designed to manage the operations
+                    of a video game store, including accounts, products,
+                    navigation, and application functionality.
+                </p>
+
+                <a href="game-store.html">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>🏨 Lodging & Travel Agency Application</h3>
+
+                <p>
+                    A Java application focused on lodging and travel-agency
+                    management with database integration and customer
+                    management functionality.
+                </p>
+
+                <a href="travel-agency.html">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>🎮 Interactive Pokémon Application</h3>
+
+                <p>
+                    An interactive Pokémon-themed application developed
+                    using C# and Unity featuring interactive interfaces,
+                    quizzes, game logic, and multimedia.
+                </p>
+
+                <a href="pokemon.html">
+                    View Project →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 Jared Burleson
+    </p>
+
+    <p>
+        <a href="https://github.com/JBurleson24-sudo">
+            GitHub Profile
+        </a>
+    </p>
+
+</footer>
+
+</body>
+</html>
