@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Pokémon Application | Jared Burleson</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: #161b22;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #30363d;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .logo {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #e6edf3;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #58a6ff;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .hero {
+            padding: 90px 0 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #8b949e;
+            font-size: 1.15rem;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        section {
+            padding: 55px 0;
+        }
+
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 25px;
+        }
+
+        .card h3 {
+            color: #58a6ff;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tech {
+            background: #21262d;
+            border: 1px solid #30363d;
+            padding: 7px 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        .features {
+            margin: 20px 0;
+            padding-left: 25px;
+        }
+
+        .features li {
+            margin-bottom: 8px;
+        }
+
+        .buttons {
+            margin-top: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 18px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #2ea043;
+        }
+
+        .back {
+            background: #21262d;
+        }
+
+        .back:hover {
+            background: #30363d;
+        }
+
+        video {
+            width: 100%;
+            max-width: 850px;
+            display: block;
+            margin: 20px auto 0;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            background: #000;
+        }
+
+        .video-note {
+            color: #8b949e;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Jared Burleson</div>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#skills">Skills</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="hero">
+            <div class="container">
+                <h1>⚡ Interactive Pokémon Application</h1>
+
+                <p>
+                    A Unity-based interactive application developed with
+                    C# featuring a Pokémon-themed study experience,
+                    video playback, and an interactive quiz system.
+                </p>
+            </div>
+        </div>
+
+        <section>
+            <div class="container">
+
+                <div class="card">
+                    <h3>📌 Project Overview</h3>
+
+                    <p>
+                        The Interactive Pokémon Application is a Unity project
+                        developed using C#. The application combines an
+                        interactive user interface with a Pokémon-themed
+                        learning and quiz experience.
+                    </p>
+
+                    <p style="margin-top: 15px;">
+                        The project includes multiple screens that allow users
+                        to navigate through the application, study material,
+                        watch video content, and complete an interactive quiz.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <h3>🛠️ Technologies Used</h3>
+
+                    <div class="tech-list">
+                        <span class="tech">C#</span>
+                        <span class="tech">Unity</span>
+                        <span class="tech">Unity UI</span>
+                        <span class="tech">Video Player</span>
+                        <span class="tech">C# Scripting</span>
+                        <span class="tech">Game Development</span>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <h3>⚙️ Key Features</h3>
+
+                    <ul class="features">
+                        <li>Pokémon-themed interactive interface</li>
+                        <li>Main menu navigation</li>
+                        <li>Study screen</li>
+                        <li>Interactive quiz system</li>
+                        <li>Multiple quiz questions and answers</li>
+                        <li>Pass and fail screens</li>
+                        <li>Video playback functionality</li>
+                        <li>Play, pause, and rewind video controls</li>
+                        <li>Camera-based screen navigation</li>
+                        <li>C# scripts controlling application behavior</li>
+                    </ul>
+                </div>
+
+
+                <div class="card">
+                    <h3>🎬 Project Video</h3>
+
+                    <p>
+                        The following video demonstrates content used with
+                        the project.
+                    </p>
+
+                    <video controls>
+                        <source src="Champions.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+
+                    <p class="video-note">
+                        Project video demonstration
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <h3>💻 What I Learned</h3>
+
+                    <p>
+                        This project gave me practical experience using Unity
+                        and C# to create an interactive application. I learned
+                        how scripts can control different parts of a Unity
+                        project and how user interactions can trigger changes
+                        between application screens.
+                    </p>
+
+                    <p style="margin-top: 15px;">
+                        I also gained experience working with Unity's UI
+                        components, video playback system, quiz logic,
+                        application navigation, and multimedia content.
+                    </p>
+                </div>
+
+
+                <div class="card">
+                    <h3>🎯 Project Highlights</h3>
+
+                    <p>
+                        This project demonstrates my interest in game and
+                        interactive application development while showing
+                        practical experience with C#, Unity, user interfaces,
+                        multimedia, and application logic.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a
+                            class="button"
+                            href="https://github.com/JBurleson24-sudo"
+                            target="_blank">
+                            View My GitHub
+                        </a>
+
+                        <a
+                            class="button back"
+                            href="index.html">
+                            ← Back to Portfolio
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Jared Burleson | Software Development Portfolio</p>
+    </footer>
+
+</body>
+</html>
