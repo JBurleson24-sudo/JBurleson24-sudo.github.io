@@ -36,12 +36,18 @@
         nav .logo {
             font-size: 1.3rem;
             font-weight: bold;
+            color: #58a6ff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
         }
 
         nav a {
             color: #e6edf3;
             text-decoration: none;
-            margin-left: 25px;
+            transition: 0.2s;
         }
 
         nav a:hover {
@@ -75,13 +81,6 @@
             padding: 55px 0;
         }
 
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 25px;
-            border-bottom: 1px solid #30363d;
-            padding-bottom: 10px;
-        }
-
         .card {
             background: #161b22;
             border: 1px solid #30363d;
@@ -94,6 +93,14 @@
             color: #58a6ff;
             margin-bottom: 15px;
             font-size: 1.5rem;
+        }
+
+        .card p {
+            color: #c9d1d9;
+        }
+
+        .card p + p {
+            margin-top: 15px;
         }
 
         .tech-list {
@@ -112,8 +119,9 @@
         }
 
         .features {
-            margin: 20px 0;
+            margin: 20px 0 0;
             padding-left: 25px;
+            color: #c9d1d9;
         }
 
         .features li {
@@ -134,10 +142,12 @@
             text-decoration: none;
             border-radius: 6px;
             font-weight: bold;
+            transition: 0.2s;
         }
 
         .button:hover {
             background: #2ea043;
+            transform: translateY(-2px);
         }
 
         .back {
@@ -159,15 +169,21 @@
         @media (max-width: 700px) {
             nav {
                 flex-direction: column;
-                gap: 10px;
+                gap: 12px;
             }
 
-            nav a {
-                margin: 0 8px;
+            .nav-links {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             .hero h1 {
                 font-size: 2.2rem;
+            }
+
+            .container {
+                width: 90%;
             }
         }
     </style>
@@ -178,10 +194,11 @@
     <nav>
         <div class="logo">Jared Burleson</div>
 
-        <div>
+        <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="index.html#projects">Projects</a>
+            <a href="index.html#about">About</a>
             <a href="index.html#skills">Skills</a>
+            <a href="index.html#projects">Projects</a>
         </div>
     </nav>
 
@@ -211,7 +228,7 @@
                         lodging, employees, and travel agency operations.
                     </p>
 
-                    <p style="margin-top: 15px;">
+                    <p>
                         The project demonstrates object-oriented programming,
                         database development, and the integration of a Java
                         application with a MySQL database.
@@ -259,7 +276,7 @@
                         application.
                     </p>
 
-                    <p style="margin-top: 15px;">
+                    <p>
                         I also gained experience working with relational
                         databases and connecting Java applications to MySQL.
                         This helped me understand how applications can store,
@@ -282,10 +299,11 @@
                         <a
                             class="button"
                             href="https://github.com/JBurleson24-sudo/Lodging-Travel-Agency"
-                            target="_blank">
+                            target="_blank"
+                            rel="noopener noreferrer">
                             View Project on GitHub
                         </a>
-                        
+
                         <a
                             class="button back"
                             href="index.html">
